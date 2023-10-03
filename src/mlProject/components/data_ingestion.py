@@ -3,8 +3,10 @@ import urllib.request as request
 import zipfile
 from mlProject import logger
 from mlProject.utils.common import get_size
-from mlProject.entity.config_entity import DataIngestionConfig
+from mlProject.entity.config_entity import (DataIngestionConfig,
+                                            DataValidationConfig)
 from pathlib import Path
+import pandas as pd
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
