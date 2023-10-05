@@ -17,10 +17,10 @@ class ModelTrainerTrainingPipeline:
 
 if __name__ == "__main__":
     try:
-        logger.info(f"{'>' * 7} stage {STAGE_NAME} started {'<' * 7}")
+        logger.info(f"{'>' * 7} {STAGE_NAME} started {'<' * 7}")
         obj = ModelTrainerTrainingPipeline()
         obj.main()
-        logger.info(f"{'>' * 7} stage {STAGE_NAME} completed {'<' * 7}\n\nx============x")
+        logger.info(f"{'>' * 7} {STAGE_NAME} completed {'<' * 7}\n\nx============x")
     except Exception as e:
         logger.exception(e)
         raise e

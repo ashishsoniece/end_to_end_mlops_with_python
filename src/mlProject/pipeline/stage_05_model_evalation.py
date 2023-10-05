@@ -1,24 +1,24 @@
 from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.data_validation import DataValidation
+from mlProject.components.model_evaluation import ModelEvaluation
 from mlProject import logger
 
-STAGE_NAME = "Data Validation stage"
+STAGE_NAME = "Model Evaluation stage"
 
-class DataValidationTrainingPipeline:
+class ModelEvaluationTrainingPipeline:
     def __init__(self):
         pass
 
     def main(self):
         config = ConfigurationManager()
-        data_validation_config = config.get_data_validation_config()
-        data_validation = DataValidation(config=data_validation_config)
-        data_validation.validate_all_columns()
+        model_evaluation_config = config.get_model_evaluation_config()
+        model_evaluation = ModelEvaluation(config=model_evaluation_config)
+        model_evaluation.log_into_mlflow()
          
 
 if __name__ == "__main__":
     try:
         logger.info(f"{'>' * 7} {STAGE_NAME} started {'<' * 7}")
-        obj = DataValidationTrainingPipeline()
+        obj = ModelEvaluationTrainingPipeline()
         obj.main()
         logger.info(f"{'>' * 7} {STAGE_NAME} completed {'<' * 7}\n\nx============x")
     except Exception as e:
