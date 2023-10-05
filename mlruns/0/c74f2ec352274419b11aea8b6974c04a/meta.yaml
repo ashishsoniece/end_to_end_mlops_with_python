@@ -1,0 +1,15 @@
+artifact_uri: file:///home/djt/Documents/Personal/end_to_end_mlops_with_python/mlruns/0/c74f2ec352274419b11aea8b6974c04a/artifacts
+end_time: 1696488506170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c74f2ec352274419b11aea8b6974c04a
+run_name: persistent-fawn-945
+run_uuid: c74f2ec352274419b11aea8b6974c04a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696488504680
+status: 3
+tags: []
+user_id: djt

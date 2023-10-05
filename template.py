@@ -30,9 +30,13 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
-    "test.py"
-
-
+    "templates/results.html",
+    "test.py",
+    "static/assets/favicon.ico",
+    "static/css/style.css",
+    "static/css2/style.css",
+    "static/css2/nunito-font.css",
+    "static/js/scripts.js"
 ]
 
 
@@ -41,7 +45,6 @@ list_of_files = [
 for filepath in list_of_files:
     filepath = Path(filepath)
     filedir, filename = os.path.split(filepath)
-
 
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
